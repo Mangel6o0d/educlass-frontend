@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  width: 90%;
+  max-width: 480px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: linear-gradient(135deg, #a8dce8, #c3a8e8);
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.backBtn {
+  background: transparent;
+  border: 1px solid #1a1a2e;
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.backBtn:hover {
+  background: rgba(0,0,0,0.08);
+}
+
+.headerTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1a1a2e;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-size: 0.95rem;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-size: 0.95rem;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  resize: none;
+  height: 120px;
+  box-sizing: border-box;
+}
+
+.fileLabel {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.fileInput {
+  display: none;
+}
+
+.fileBtn {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 20px;
+  border: 1.5px solid #aaa;
+  background: #fff;
+  font-size: 0.9rem;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  transition: background 0.2s;
+}
+
+.fileBtn:hover {
+  background: #f0f0f0;
+}
+
+.fileList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fileItem {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.inputFecha {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-size: 0.9rem;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.footer {
+  padding: 16px 24px 24px 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.crearBtn {
+  background: #a8dce8;
+  color: #1a1a2e;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 36px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.crearBtn:hover {
+  background: #85c9d8;
+}
+
+.fileItem {
+  font-size: 0.85rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.fileRemove {
+  background: transparent;
+  border: none;
+  color: #e53e3e;
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0 4px;
+}
+
+.fileRemove:hover {
+  color: #c53030;
+}
+
+.fileHint {
+  font-size: 0.78rem;
+  color: #999;
+  margin: -8px 0 4px 0;
+}

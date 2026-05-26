@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  width: 90%;
+  max-width: 700px;
+  background: #f0f4f8;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.header {
+  background: linear-gradient(135deg, #a8dce8, #c3a8e8);
+  padding: 24px 28px;
+}
+
+.appName {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.asignacionNombre {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #1a1a2e;
+  margin: 4px 0 0 0;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  background: #f0f4f8;
+  border-bottom: 2px solid #eee;
+  padding: 0 20px;
+  gap: 8px;
+}
+
+.tab {
+  padding: 12px 24px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #888;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: -2px;
+}
+
+.tab:hover {
+  color: #7c3aed;
+}
+
+.tabActivo {
+  color: #7c3aed;
+  border-bottom-color: #7c3aed;
+  font-weight: 600;
+}
+
+.badge {
+  background: #7c3aed;
+  color: #fff;
+  border-radius: 20px;
+  padding: 1px 8px;
+  font-size: 0.75rem;
+}
+
+.body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: #f0f4f8;
+}
+
+.detalleAsignacion {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.seccion {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px 20px;
+  border: 1px solid #eee;
+}
+
+.seccionLabel {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #7c3aed;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 8px 0;
+}
+
+.seccionValor {
+  font-size: 0.95rem;
+  color: #333;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.archivosList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.archivoBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: #f5f0ff;
+  border: 1px solid #c4b5fd;
+  border-radius: 8px;
+  color: #7c3aed;
+  font-size: 0.88rem;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  transition: background 0.2s;
+  width: fit-content;
+}
+
+.archivoBtn:hover {
+  background: #ede9fe;
+}
+
+.entregasList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.vacio {
+  text-align: center;
+  color: #888;
+  padding: 40px 0;
+}
+
+.entregaCard {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px 20px;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.entregaInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entregaAlumno {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.entregaFecha {
+  font-size: 0.8rem;
+  color: #888;
+  margin: 0;
+}
+
+.calificacionRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.calificacionInput {
+  width: 70px;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+  text-align: center;
+}
+
+.calificacionInput:focus {
+  border-color: #7c3aed;
+}
+
+.calificarBtn {
+  padding: 6px 18px;
+  background: #7c3aed;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.calificarBtn:hover {
+  background: #6d28d9;
+}
+
+.calificarBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.estadoBadge {
+  display: inline-block;
+  background: #d1fae5;
+  color: #065f46;
+  border-radius: 20px;
+  padding: 2px 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.backBtn {
+  position: absolute;
+  bottom: 16px;
+  left: 20px;
+  background: transparent;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.backBtn:hover {
+  background: rgba(255,255,255,0.4);
+}

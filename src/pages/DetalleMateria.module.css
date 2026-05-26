@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  width: 90%;
+  max-width: 900px;
+  background: #f0f4f8;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.header {
+  background: linear-gradient(135deg, #a8dce8, #c3a8e8);
+  padding: 24px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appName {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.materiaNombre {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #1a1a2e;
+  margin: 4px 0 0 0;
+}
+
+.crearBtn {
+  background: #7c3aed;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.crearBtn:hover {
+  background: #6d28d9;
+}
+
+.body {
+  padding: 16px 20px 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: #f0f4f8;
+}
+
+.vacio {
+  color: #555;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.asignacionCard {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.asignacionTop {
+  padding: 16px;
+  background: #fff;
+}
+
+.asignacionTitulo {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0 0 8px 0;
+  color: #1a1a2e;
+}
+
+.asignacionDesc {
+  font-size: 0.88rem;
+  color: #555;
+  margin: 0;
+}
+
+.asignacionFecha {
+  background: #fff;
+  padding: 10px 16px;
+  font-size: 0.85rem;
+  color: #333;
+  border-top: 1px solid #ddd;
+}
+
+.backBtn {
+  position: absolute;
+  bottom: 16px;
+  left: 20px;
+  background: transparent;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.backBtn:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+.asignacionTituloRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.menuWrapper {
+  position: relative;
+}
+
+.menuBtn {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0 6px;
+  color: #555;
+  line-height: 1;
+}
+
+.menuBtn:hover {
+  color: #1a1a2e;
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 24px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  z-index: 100;
+  min-width: 130px;
+  overflow: hidden;
+}
+
+.dropdownItem {
+  display: block;
+  width: 100%;
+  padding: 10px 16px;
+  background: transparent;
+  border: none;
+  text-align: left;
+  font-size: 0.9rem;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  color: #333;
+}
+
+.dropdownItem:hover {
+  background: #f5f5f5;
+}
+
+.dropdownItemRojo {
+  color: #e53e3e;
+}
+
+.dropdownItemRojo:hover {
+  background: #fff5f5;
+}

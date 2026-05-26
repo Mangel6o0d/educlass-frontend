@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card {
+  width: 90%;
+  max-width: 1400px;
+  min-height: 600px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  background: #fff;
+  position: relative;
+}
+
+.header {
+  background: linear-gradient(135deg, #a8dce8, #c3a8e8);
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appName {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.alumnoName {
+  font-size: 1.2rem;
+  color: #1a1a2e;
+  margin: 4px 0 0 0;
+}
+
+.menuWrapper {
+  position: relative;
+}
+
+.menuButton {
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #1a1a2e;
+  letter-spacing: 2px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  transition: background 0.2s;
+  line-height: 1;
+}
+
+.menuButton:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.menuDropdown {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  min-width: 160px;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.menuItem {
+  width: 100%;
+  padding: 12px 16px;
+  background: transparent;
+  border: none;
+  text-align: left;
+  font-size: 0.95rem;
+  cursor: pointer;
+  color: #e53e3e;
+  font-family: 'Poppins', sans-serif;
+  transition: background 0.2s;
+}
+
+.menuItem:hover {
+  background: #fff5f5;
+}
+
+.empty {
+  padding: 120px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.emptyImg {
+  width: 300px;
+  opacity: 0.85;
+}
+
+.emptyText {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 24px;
+}
+
+.materiaCard {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.materiaCard:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.materiaHeader {
+  background: linear-gradient(135deg, #a8dce8, #c3a8e8);
+  padding: 14px;
+}
+
+.materiaNombre {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0 0 8px 0;
+  color: #1a1a2e;
+}
+
+.materiaInfo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #1a1a2e;
+}
+
+.materiaBody {
+  padding: 14px;
+  background: #fff;
+  min-height: 80px;
+}
+
+.asignacionItem {
+  font-size: 0.82rem;
+  color: #333;
+  margin: 0 0 6px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sinAsignaciones {
+  font-size: 0.82rem;
+  color: #aaa;
+  margin: 0;
+  font-style: italic;
+}
+
+.addButton {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 2px solid #1a1a2e;
+  background: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: background 0.2s;
+}
+
+.addButton:hover {
+  background: #f0f0f0;
+}
+
+/* MODAL UNIRSE */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px;
+  width: 90%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.modalTitulo {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #1a1a2e;
+  margin: 0;
+  text-align: center;
+}
+
+.modalSubtitulo {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+  text-align: center;
+}
+
+.modalInput {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.modalInput:focus {
+  border-color: #7c3aed;
+}
+
+.modalError {
+  font-size: 0.85rem;
+  color: #dc2626;
+  text-align: center;
+  margin: 0;
+}
+
+.modalBtns {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.modalCancelar {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: transparent;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.modalCancelar:hover {
+  background: #f5f5f5;
+}
+
+.modalAceptar {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #7c3aed;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.modalAceptar:hover {
+  background: #6d28d9;
+}
+
+.modalAceptar:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

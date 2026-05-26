@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card {
+  width: 90%;
+  max-width: 500px;
+  min-height: 500px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 24px;
+  border-bottom: 1px solid #eee;
+  background: linear-gradient(135deg, #a8dce8, #c3a8e8);
+}
+
+.backButton {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: transparent;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backButton:hover {
+  background: #f0f0f0;
+}
+
+.headerTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.body {
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 14px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: #fff;
+  border-radius: 6px 6px 0 0;
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-bottom-color: #a8dce8;
+}
+
+.select {
+  width: 100%;
+  padding: 10px 14px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: #fff;
+  border-radius: 6px 6px 0 0;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  transition: border-color 0.2s;
+  cursor: pointer;
+  color: #333;
+}
+
+.select:focus {
+  border-bottom-color: #a8dce8;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.submitButton {
+  margin-top: 16px;
+  padding: 14px;
+  background: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submitButton:hover {
+  background: #6d28d9;
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
