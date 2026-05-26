@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://educlass-22010936.infinityfreeapp.com/api/:path*"
+      "destination": "https://educlass-backend-production-072d.up.railway.app/:path*"
     },
     {
       "source": "/(.*)",
