@@ -1,8 +1,8 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/api/:path*",
-      "destination": "https://educlass-22010936.infinityfreeapp.com/api/:path*"
+      "src": "/api/(.*)",
+      "dest": "https://educlass-22010936.infinityfreeapp.com/api/$1"
     }
   ]
 }
