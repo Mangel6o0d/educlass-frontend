@@ -1,4 +1,4 @@
-const BASE_URL = 'https://educlass-22010936.infinityfreeapp.com/api'
+const BASE_URL = '/api'
 
 export async function crearMateria(datos) {
   const res = await fetch(`${BASE_URL}/materias/crear.php`, {
